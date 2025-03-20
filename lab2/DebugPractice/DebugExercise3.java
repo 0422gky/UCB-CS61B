@@ -1,6 +1,8 @@
 /**
  * Created by jug on 1/22/18.
  */
+
+ // the bug is in the raw data: kroger turnip is negative
 public class DebugExercise3 {
     public static int countTurnips(In in) {
         int totalTurnips = 0;
