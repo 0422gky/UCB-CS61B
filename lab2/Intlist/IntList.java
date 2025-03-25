@@ -82,7 +82,20 @@ public class IntList {
 
     public static IntList dcatenate(IntList A, IntList B) {
         //TODO:  fill in method
-        return null;
+        //don't use new
+        if(A == null){
+            return B;
+        }
+        if(B == null){
+            return A;
+        }
+        IntList iter = A;
+        while(iter.rest != null){
+            iter = iter.rest;
+        }
+        IntList last = iter;
+        last.rest = B;
+        return A;
     }
 
     /**
@@ -91,7 +104,26 @@ public class IntList {
      */
     public static IntList catenate(IntList A, IntList B) {
         //TODO:  fill in method
-        return null;
+        if(A == null){
+            return B;
+        }
+        if(B == null){
+            return A;
+        }
+        var result = new IntList(A.first,null); //这里不能直接打A.rest,否则result.rest会和A.rest指向同一个东西
+        var temp = result;
+        while(A.rest != null){
+            A = A.rest;
+            temp.rest = new IntList(A.first,null);
+            temp = temp.rest;
+        }
+        var iter = result;
+        while(iter.rest != null){
+            iter = iter.rest;
+        }
+        var last = iter;
+        last.rest = B;
+        return result;
     }
 
 
