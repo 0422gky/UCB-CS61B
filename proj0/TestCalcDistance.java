@@ -8,6 +8,7 @@ public class TestCalcDistance {
      *  Tests calcDistance.
      */
     public static void main(String[] args) {
+        //main函数，测试框架封装好放在main里面等待执行
         checkCalcDistance();
     }
 
@@ -19,6 +20,7 @@ public class TestCalcDistance {
      *  @param  label       Label for the 'test' case
      *  @param  eps         Tolerance for the double comparison.
      */
+    //列举参数,这前面就是一个decorator,说明了一下函数里的参数都是干啥的
     private static void checkEquals(double actual, double expected, String label, double eps) {
         if (Math.abs(expected - actual) <= eps * Math.max(expected, actual)) {
             System.out.println("PASS: " + label + ": Expected " + expected + " and you gave " + actual);
