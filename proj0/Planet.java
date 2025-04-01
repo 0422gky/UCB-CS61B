@@ -91,4 +91,10 @@ public class Planet {
         this.xxPos += dt * this.xxVel;
         this.yyPos += dt * this.yyVel;
     }
+
+    void draw(){
+        // draw a planet itself at its position
+        StdDraw.picture(xxPos, yyPos, "./images/"+imgFileName);
+        //为了能够成功读取到images里面的图片文件，加上如上的路径
+    }
 }
