@@ -1,0 +1,11 @@
+{
+    "java.project.referencedLibraries": [
+        "library-sp18/javalib/**/*.jar",
+        "d:\\Codefield\\JAVA\\cs61b\\UCB-CS61B\\lab2setup\\lib\\algs4.jar",
+        "d:\\Codefield\\JAVA\\cs61b\\UCB-CS61B\\lab2setup\\lib\\hamcrest-core-1.3.jar",
+        "d:\\Codefield\\JAVA\\cs61b\\UCB-CS61B\\lab2setup\\lib\\jh61b.jar",
+        "d:\\Codefield\\JAVA\\cs61b\\UCB-CS61B\\lab2setup\\lib\\junit-4.12.jar",
+        "d:\\Codefield\\JAVA\\cs61b\\UCB-CS61B\\lab2setup\\lib\\stdlib.jar",
+        "d:\\Codefield\\JAVA\\cs61b\\UCB-CS61B\\lab2setup\\lib\\stdlib-package.jar"
+    ]
+}
